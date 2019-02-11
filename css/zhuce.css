@@ -1,0 +1,82 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.box h1 {
+  font-size: 0.53333333rem;
+  text-align: center;
+  color: #536A88;
+  margin-top: 0.8rem;
+  position: relative;
+}
+.box h1:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 1.06666667rem;
+  left: 0px;
+}
+.box form {
+  width: 100%;
+  height: auto;
+  margin-top: 0.53333333rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box form .use {
+  width: 90%;
+}
+.box form .use p {
+  width: 2.4rem;
+  height: 0.53333333rem;
+  color: #0B0B0B;
+  font-size: 0.42666667rem;
+  display: inline-block;
+}
+.box form .use input {
+  width: 60%;
+  height: 0.8rem;
+  font-size: 0.42666667rem;
+  outline: none;
+  margin-left: 0.26666667rem;
+  border: 1px solid #000;
+}
+.box form .use span {
+  color: red;
+  font-size: 0.37333333rem;
+  display: block;
+  margin-top: 0.13333333rem;
+  display: none;
+}
+.box form .zhu {
+  width: 100%;
+  height: 0.8rem;
+  margin-top: 1.33333333rem;
+  display: flex;
+}
+.box form .zhu #zc {
+  width: 60%;
+  height: 0.8rem;
+  margin: 0px auto;
+  font-size: 0.42666667rem;
+  color: #fff;
+  background: #FB8700;
+}

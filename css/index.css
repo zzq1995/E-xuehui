@@ -1,0 +1,380 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+body header {
+  width: 100%;
+  height: 2.13333333rem;
+  margin-top: 2.66666667rem;
+  display: flex;
+  justify-content: space-between;
+}
+body header .logo {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+body header .logo img {
+  width: 2.13333333rem;
+  height: 2.13333333rem;
+}
+body header .ming {
+  width: 48%;
+  height: 100%;
+}
+body header .ming .wen {
+  width: 100%;
+  display: flex;
+  animation: myimg2 1s;
+}
+body header .ming .wen img {
+  width: 2rem;
+  height: 1.06666667rem;
+}
+body header .ming .ying {
+  width: 100%;
+  display: flex;
+  margin-top: 0.13333333rem;
+  animation: myimg3 1s;
+}
+body header .ming .ying img {
+  width: 2.26666667rem;
+  height: 0.53333333rem;
+}
+body footer {
+  width: 100%;
+  height: 6.66666667rem;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+body footer .Cloud1 {
+  width: 1.33333333rem;
+  position: absolute;
+  top: 0px;
+  right: 10%;
+  animation: yun1 8s linear infinite;
+}
+body footer .Cloud2 {
+  width: 1.33333333rem;
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  animation: yun2 8s linear infinite;
+}
+body footer .Cloud3 {
+  width: 0.8rem;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  animation: yun3 8s linear infinite;
+}
+body footer .grh {
+  width: 0.93333333rem;
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+}
+body footer .grez {
+  width: 0.13333333rem;
+  position: absolute;
+  top: 50%;
+  left: 15.8%;
+}
+body footer .gref {
+  width: 0.8rem;
+  position: absolute;
+  top: 44%;
+  left: 12.5%;
+  animation: wheel1 2s linear infinite;
+}
+body footer .flower1 {
+  width: 1.2rem;
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+  z-index: 1;
+  width: 1.33333333rem;
+  animation: flow2  2s linear infinite;
+}
+body footer .gen1 {
+  width: 0.26666667rem;
+  position: absolute;
+  bottom: 2%;
+  left: 9.5%;
+  z-index: 1;
+}
+body footer .flower2 {
+  width: 0.53333333rem;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  z-index: 1;
+  animation: flow2  2s linear infinite;
+}
+body footer .yeh {
+  width: 0.93333333rem;
+  position: absolute;
+  bottom: 14%;
+  left: 34%;
+}
+body footer .yez {
+  width: 0.13333333rem;
+  position: absolute;
+  bottom: 33%;
+  left: 38%;
+}
+body footer .yef {
+  width: 0.8rem;
+  position: absolute;
+  bottom: 35%;
+  left: 34%;
+  animation: wheel2 2s linear infinite;
+}
+body footer .flower3 {
+  width: 0.72rem;
+  position: absolute;
+  bottom: 8%;
+  left: 25%;
+  z-index: 1;
+  animation: flow2  2s linear infinite;
+}
+body footer .reh {
+  width: 0.93333333rem;
+  position: absolute;
+  bottom: 0.85333333rem;
+  left: 5.06666667rem;
+}
+body footer .rez {
+  width: 0.13333333rem;
+  position: absolute;
+  top: 1.06666667rem;
+  left: 5.46666667rem;
+}
+body footer .ref {
+  width: 0.8rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 5.2rem;
+  animation: wheel3 2s linear infinite;
+}
+body footer .orh {
+  width: 0.93333333rem;
+  position: absolute;
+  bottom: 12%;
+  right: 25%;
+}
+body footer .ore {
+  width: 0.13333333rem;
+  position: absolute;
+  top: 25%;
+  right: 29%;
+}
+body footer .orf {
+  width: 0.8rem;
+  position: absolute;
+  top: 19%;
+  right: 26%;
+  animation: wheel4 2s linear infinite;
+}
+body footer .genda {
+  width: 0.26666667rem;
+  position: absolute;
+  bottom: 4.5%;
+  right: 25.2%;
+  z-index: 1;
+}
+body footer .you1 {
+  width: 1.22666667rem;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  z-index: 1;
+  animation: flow2  2s linear infinite;
+}
+body footer .you2 {
+  width: 0.53333333rem;
+  position: absolute;
+  bottom: 7%;
+  right: 12%;
+  z-index: 1;
+  animation: flow2  2s linear infinite;
+}
+body footer .you3 {
+  width: 0.72rem;
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  z-index: 1;
+  animation: flow2  2s linear infinite;
+}
+body footer .tudi {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+@keyframes myimg2 {
+  from {
+    -webkit-transform: translate3d(0, -1.33333333rem, 0);
+    transform: translate3d(0, -1.33333333rem, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes myimg3 {
+  from {
+    -webkit-transform: translate3d(0, 1.33333333rem, 0);
+    transform: translate3d(0, 1.33333333rem, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes wheel1 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 56%;
+    /*定义动画的旋转中心点*/
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 50% 56%;
+    /*定义动画的旋转中心点*/
+  }
+}
+@keyframes wheel2 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 57% 49%;
+    /*定义动画的旋转中心点*/
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 57% 49%;
+    /*定义动画的旋转中心点*/
+  }
+}
+@keyframes wheel3 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 42% 44%;
+    /*定义动画的旋转中心点*/
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 42% 44%;
+    /*定义动画的旋转中心点*/
+  }
+}
+@keyframes wheel4 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 55% 55%;
+    /*定义动画的旋转中心点*/
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 55% 55%;
+    /*定义动画的旋转中心点*/
+  }
+}
+@keyframes flow2 {
+  0% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(-5deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@keyframes yun1 {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-6.13333333rem);
+    opacity: 0.5;
+  }
+  80% {
+    transform: translateX(0rem);
+    opacity: 0.5;
+  }
+  90% {
+    transform: translateX(1.6rem);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes yun2 {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(7.2rem);
+    opacity: 0.2;
+  }
+  80% {
+    transform: translateX(0rem);
+    opacity: 0.5;
+  }
+  90% {
+    transform: translateX(-1.06666667rem);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes yun3 {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(4.8rem);
+    opacity: 0.2;
+  }
+  60% {
+    transform: translateX(0rem);
+    opacity: 0.5;
+  }
+  80% {
+    transform: translateX(-2.66666667rem);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
