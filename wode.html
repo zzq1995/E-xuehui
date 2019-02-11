@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="css/wode.css">
+
+
+    <script type="text/javascript">
+        var pixelRatio = 1 / window.devicePixelRatio;    //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";     //10在这边只是一个基准
+    </script>
+</head>
+<body>
+    <div class="box">
+        <header id="header" class="">
+            <div class="con">
+                <img src="img/tuoyuan.png" alt="">
+            </div>
+            <p>暂未登录</p>
+            <div class="deng">
+                <button type="" onclick="dain()">登录</button>
+            </div>
+        </header><!-- /header -->
+        <div class="contain">
+            <ul>
+                <li>
+                    <a href="">
+                        <img class="img1" src="img/02071918.png" alt="" />
+                        <p>我的课程</p>
+                        <img src="img/02071924.png" alt="" class="img2">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="img1" src="img/favourite@2x.png" alt="" />
+                        <p>我的收藏</p>
+                        <img src="img/02071924.png" alt="" class="img2">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="img1" src="img/02071929.png" alt="" />
+                        <p>我的缓存</p>
+                        <img src="img/02071924.png" alt="" class="img2">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="img1" src="img/02071930.png" alt="" />
+                        <p>会员排行</p>
+                        <img src="img/02071924.png" alt="" class="img2">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="kong"></div>
+        <!-- 底部 -->
+        <footer>
+            <ul>
+                <li>
+                    <a href="shouye.html">
+                        <div class="tu">
+                            <img src="img/home.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p2">首页</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="kecheng.html">
+                        <div class="tu">
+                            <img src="img/readmode.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p2">课程分类</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="tu">
+                            <img src="img/material.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p1">我的</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+     function dain(){
+        window.location.href='denglu.html'
+     }
+</script>
+

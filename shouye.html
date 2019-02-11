@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/shouye.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+
+    <script type="text/javascript">
+        var pixelRatio = 1 / window.devicePixelRatio;    //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";     //10在这边只是一个基准
+    </script>
+</head>
+<body>
+    <div class="box">
+        <header id="header" class="">
+            <div class="head-top">
+                <div class="head-left">
+                    <p>全部课程</p>
+                </div>
+                <div class="head-right">
+                    <div class="wen">
+                        <a href="">
+                            <img src="img/i@2x.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="sou">
+                        <a href="">
+                            <img src="img/search@2x.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <!-- Swiper -->
+            <div class="swiper-container" id="swiper-container1">
+                <div class="swiper-wrapper" >
+                    <div class="swiper-slide"><img src="img/TU30.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/tu31.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/tu32.png" alt=""></div>
+                </div>
+                <!-- Add Pagination-->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>-->
+            </div>
+        <!-- Swiper JS -->
+        <script src="dist/js/swiper.min.js"></script>
+        </div>
+        <!-- 课程 -->
+        <div class="ke">
+            <ul>
+                <li>
+                    <a href="">最新课程</a>
+                </li>
+                <li>
+                    <a href="">最热课程</a>
+                </li>
+                <li style="border:none">
+                    <a href="">推荐课程</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="contain">
+            <ul>
+                <li>
+                    <div class="content">
+                        <div class="con-left">
+                            <img src="img/02010905.png" alt="">
+                        </div>
+                        <div class="con-right">
+                            <a href="neirong.html"><p>Ios基础入门之框架初体验</p></a>
+                            <div class="con-boot">
+                                <div class="boot-left">
+                                    <img src="img/tu36.png" alt="">
+                                    <span>129</span>
+                                </div>
+                                <div class="boot-left">
+                                    <img src="img/tu35.png" alt="">
+                                    <span>2小时</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="con-left">
+                            <img src="img/tu38.png" alt="">
+                        </div>
+                        <div class="con-right">
+                            <a href=""><p>Android-精通Activity</p></a>
+                            <div class="con-boot">
+                                <div class="boot-left">
+                                    <img src="img/tu36.png" alt="">
+                                    <span>129</span>
+                                </div>
+                                <div class="boot-left">
+                                    <img src="img/tu35.png" alt="">
+                                    <span>2小时</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="con-left">
+                            <img src="img/tu39.png" alt="">
+                        </div>
+                        <div class="con-right">
+                            <a href=""><p>python文件处理</p></a>
+                            <div class="con-boot">
+                                <div class="boot-left">
+                                    <img src="img/tu36.png" alt="">
+                                    <span>129</span>
+                                </div>
+                                <div class="boot-left">
+                                    <img src="img/tu35.png" alt="">
+                                    <span>2小时</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 底部 -->
+        <footer>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="tu">
+                            <img src="img/home@2x.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p1">首页</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="kecheng.html">
+                        <div class="tu">
+                            <img src="img/readmode.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p2">课程分类</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="wode.html">
+                        <div class="tu">
+                            <img src="img/material@2x.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p2">我的</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay:true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/denglu.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+
+    <script type="text/javascript">
+        var pixelRatio = 1 / window.devicePixelRatio;    //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";     //10在这边只是一个基准
+    </script>
+</head>
+<body>
+    <div class="box">
+        <header id="header" class="">
+            <div class="wu">
+                <p>用户登录</p>
+                <a href="zhuce.html">注册</a>
+            </div>
+        </header><!--   /header -->
+        <div class="content">
+            <form id="user_login" action="shouye.html" method="get" onSubmit="return myCheck()">
+                <div class="top">
+                    <img src="img/02081354.png" alt="" />
+                    <input type="text" name="" placeholder="请输入手机号码" id="accountName" onblur="sh()" autocomplete="off">
+                    <input type="button" name="" value="获取验证码" class="yan" id="btn">
+                </div>
+                <div class="bottom">
+                    <img src="img/02081420.png" alt="">
+                    <input  name="" id="password" type="password" placeholder="请输入密码" onblur="mi()">
+                </div>
+                <div class="fenx">
+                    <div class="left">
+                        <a href=""><p>第三方登录</p></a>
+                        <a href=""><img src="img/02081444.png" alt=""></a>
+                        <a href=""><img src="img/02081445.png" alt=""></a>
+                        <a href=""><img src="img/02081446.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                        <a href="">忘记密码？</a>
+                    </div>
+                </div>
+                <input type="submit" name="" value="登录" class="code" >
+            </form>
+            <div class="contain">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    function $(x){
+        return document.getElementById(x)
+    }
+    var st=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/
+    var re=/^[A-Za-z0-9]+$/
+    function sh(){
+        if(!st.test($("accountName").value))
+            $("accountName").value=''
+    }
+    function mi(){
+        if(!re.test($("password").value))
+            $("password").value=''
+    }
+    function myCheck(){
+        for(var i=0;i<$('user_login').elements.length-1;i++){
+            if($('user_login').elements[i].value == ''){
+                alert('不能有空白项登录')
+                $('user_login').elements[i].focus();
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+        var wait=60;
+        function time(o) {
+
+            if (wait == 0) {
+                o.removeAttribute("disabled");
+                o.value="获取验证码";
+                o.style.color = "#fff";
+                o.style.backgroundColor = "#4DA0E6";
+
+            } else {
+                o.setAttribute("disabled", true);
+                o.value= wait+'秒';
+                o.style.color = "#CDCDCD";
+                o.style.backgroundColor = "#ddd";
+                wait--;
+                setTimeout(function() {
+                    time(o)
+                }, 1000)
+            }
+        }
+        $("btn").onclick=function(){time(this);}
+</script>

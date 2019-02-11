@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>会学app</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script type="text/javascript">
+        var pixelRatio = 1 / window.devicePixelRatio;    //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";     //10在这边只是一个基准
+    </script>
+</head>
+<body >
+    <header id="header" class="">
+        <div class="logo animated slideInLeft .5s">
+            <img src="img/logo.png" alt="" >
+        </div>
+        <div class="ming">
+            <!-- <img src="img/ming.png" alt=""> -->
+            <div class="wen">
+                <img src="img/xue.png" alt="" >
+            </div>
+            <div class="ying">
+                <img src="img/ying.png" alt="">
+            </div>
+        </div>
+    </header>
+    <footer>
+        <!-- 云彩 -->
+        <img class="Cloud1" src="img/yun1.png" alt="">
+        <img class="Cloud2" src="img/yun1.png" alt="">
+        <img class="Cloud3" src="img/yun3.png" alt="">
+        <!-- 第一个房子 -->
+        <img class="grh" src="img/greenhourse.png" alt="">
+        <img src="img/zhou.png" alt="" class="grez">
+        <img src="img/fenghuolun.png" alt="" class="gref">
+        <img src="img/021113511.png" alt="" class="flower1">
+        <img src="img/gen.png" alt="" class="gen1">
+        <img src="img/02111401.png" alt="" class="flower2">
+        <!-- 第二个房子 -->
+        <img class="yeh" src="img/yellowhourse.png" alt="">
+        <img src="img/zhou.png" alt="" class="yez">
+        <img src="img/yef.png" alt="" class="yef">
+        <img src="img/02111407.png" alt="" class="flower3">
+        <!-- 第三个房子 -->
+        <img class="reh" src="img/redhourse.png" alt="">
+        <img src="img/zhou.png" alt="" class="rez">
+        <img src="img/ref.png" alt="" class="ref">
+        <!-- 第四个房子 -->
+        <img class="orh" src="img/orangehourse.png" alt="" />
+        <img src="img/zhou.png" alt="" class="ore">
+        <img src="img/orf.png" alt="" class="orf">
+        <img src="img/gen2.png" alt="" class="genda">
+        <img src="img/you1.png" alt="" class="you1">
+        <img src="img/02111401.png" alt="" class="you2">
+        <img src="img/02111407.png" alt="" class="you3">
+
+
+
+
+        <img class="tudi" src="img/tudi.png" alt="">
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+    setTimeout(time,5000);
+        function time(){
+        window.location.href='shouye.html'
+    }
+</script>

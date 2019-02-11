@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ios基础入门之框架初体验</title>
+    <link rel="stylesheet" type="text/css" href="css/neirong.css">
+
+    <script type="text/javascript">
+        var pixelRatio = 1 / window.devicePixelRatio;    //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";     //10在这边只是一个基准
+    </script>
+</head>
+<body>
+    <div class="box">
+        <header id="header" class="">
+            <div class="zhegai"></div>
+            <div class="top">
+                <div class="top-left">
+                    <div class="fanhui">
+                        <a href="shouye.html">&lt;</a>
+                    </div>
+                    <div class="sheng">
+                        <p>Ios基础入门之框架初体验</p>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" onclick="change1()">
+                                <img src="img/02011039.png" alt="" id="'lmg1" />
+                                <div class="tan" id="tan" style="display:none">
+                                    <p>会员积分不足，请充值！！！</p>
+                                </div>
+                                <div class="cha" id="cha" style="display:none"><p>x</p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="change2()">
+                                <img id="lmg2" src="img/02011044.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="img/02011045.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 目录 -->
+        <div class="mu">
+            <ul>
+                <li class="lip">
+                    <p >详细信息</p>
+                </li>
+                <li class="lip">
+                    <p >交流</p>
+                </li>
+                <li class="lip">
+                    <p onclick="tiao()">章节</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 标题 -->
+        <div class="title"><p>ios基础入门之框架初体验</p></div>
+        <!-- 讲师 -->
+        <div class="teac">
+            <p>讲师</p>
+            <ul>
+                <li>
+                    <div class="li-left">
+                        <img src="img/02011736.png" alt="" />
+                    </div>
+                    <div class="li-right">
+                        <h3>Vistor</h3>
+                        <div class="kz">
+                            <span>教授</span>
+                            <span>昆士兰大学</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-left">
+                        <img src="img/02011736.png" alt="" />
+                    </div>
+                    <div class="li-right">
+                        <h3>Vistor</h3>
+                        <div class="kz">
+                            <span>教授</span>
+                            <span>昆士兰大学</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 课程简介 -->
+        <div class="introduction">
+            <p class="inp">课程简介</p>
+            <div class="bao">
+                <p>代码百万行，项目千余个，键盘20个，泡面200箱，上市公司扛过枪;代码百万行，项目千余个，键盘20个，泡面200箱，上市公司扛过枪;代码百万行，项目千余个，键盘20个，泡面200箱，上市公司扛过枪;代码百万行，项目千余个，键盘20个，泡面200箱，上市公司扛过枪;代码百万行，项目千余个，键盘20个，泡面200箱，上市公司扛过枪;</p>
+            </div>
+        </div>
+        <!-- 他们也在学 -->
+        <div class="taa">
+            <span>他们也在学</span>
+            <ul>
+                <li>
+                    <img src="img/02021004.png" alt="">
+                    <p>Vistor</p>
+                </li>
+                <li>
+                    <img src="img/02021004.png" alt="">
+                    <p>Vistor</p>
+                </li>
+                <li>
+                    <img src="img/02021004.png" alt="">
+                    <p>Vistor</p>
+                </li>
+                <li>
+                    <img src="img/02021004.png" alt="">
+                    <p>Vistor</p>
+                </li>
+                <li>
+                    <img src="img/02021004.png" alt="">
+                    <p>Vistor</p>
+                </li>
+            </ul>
+            <div class="xia"><a href="###"><img src="img/02021012.png" alt="" /></a></div>
+        </div>
+        <!-- 相关推荐 -->
+        <div class="rcmd">
+            <span>相关推荐</span>
+            <ul>
+                <li>
+                    <div class="content">
+                        <div class="con-left">
+                            <img src="img/tu34.png" alt="">
+                        </div>
+                        <div class="con-right">
+                            <a href="neirong.html"><p>PHP+MySQL分页原理实现</p></a>
+                            <div class="con-boot">
+                                <div class="boot-left">
+                                    <img src="img/tu36.png" alt="">
+                                    <p>129</p>
+                                </div>
+                                <div class="boot-left">
+                                    <img src="img/tu35.png" alt="">
+                                    <p>2小时</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="con-left">
+                            <img src="img/tu38.png" alt="">
+                        </div>
+                        <div class="con-right">
+                            <a href=""><p>Android-精通Activity</p></a>
+                            <div class="con-boot">
+                                <div class="boot-left">
+                                    <img src="img/tu36.png" alt="">
+                                    <p>129</p>
+                                </div>
+                                <div class="boot-left">
+                                    <img src="img/tu35.png" alt="">
+                                    <p>2小时</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="con-left">
+                            <img src="img/tu39.png" alt="">
+                        </div>
+                        <div class="con-right">
+                            <a href=""><p>python文件处理</p></a>
+                            <div class="con-boot">
+                                <div class="boot-left">
+                                    <img src="img/tu36.png" alt="">
+                                    <p>129</p>
+                                </div>
+                                <div class="boot-left">
+                                    <img src="img/tu35.png" alt="">
+                                    <p>2小时</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="con-left">
+                            <img src="img/02010905.png"" alt="">
+                        </div>
+                        <div class="con-right">
+                            <a href=""><p>Ios基础入门之框架初体验</p></a>
+                            <div class="con-boot">
+                                <div class="boot-left">
+                                    <img src="img/tu36.png" alt="">
+                                    <p>129</p>
+                                </div>
+                                <div class="boot-left">
+                                    <img src="img/tu35.png" alt="">
+                                    <p>2小时</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 底部 -->
+        <footer>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="tu">
+                            <img src="img/home@2x.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p1">首页</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="kecheng.html">
+                        <div class="tu">
+                            <img src="img/readmode.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p2">课程分类</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="wode.html">
+                        <div class="tu">
+                            <img src="img/material@2x.png" alt="">
+                        </div>
+                        <div class="sy">
+                            <p class="sy-p2">我的</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <div class="kongbai"></div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    function $(x){
+        return document.getElementById(x)
+    }
+    function change2(){
+        if($("lmg2").getAttribute("src") == 'img/02011044.png'){
+            $('lmg2').src='img/02011100.png'
+        }else{
+            $('lmg2').src='img/02011044.png'
+        }
+    }
+
+    function change1(){
+        if($("tan").style.display== 'none'){
+            $("tan").style.display='block'
+            $("cha").style.display='block'
+        }else{
+            $("tan").style.display= 'none'
+            $("cha").style.display='none'
+        }
+    }
+
+    window.onload=function(){
+        var lip=document.getElementsByClassName('lip')
+        for(var i=0;i<lip.length;i++){
+            lip[i].index=i;
+            lip[i].onclick=function(){
+                for(var i=0;i<lip.length;i++){
+                    lip[i].style.cssText='border-bottom: 1px solid #DEDEDE ;color:#434343';
+                }
+                    lip[this.index].style.cssText="border-bottom: 1px solid #71B0E4;color:#79B8EC";
+            }
+        }
+    }
+
+    function tiao(){
+        window.location.href='zhangjie.html'
+    }
+</script>

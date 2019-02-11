@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/zhuce.css">
+    <script type="text/javascript">
+        var pixelRatio = 1 / window.devicePixelRatio;    //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+
+        var html=document.getElementsByTagName('html')[0];
+        var pageWidth=html.getBoundingClientRect().width;
+        html.style.fontSize=pageWidth/10+"px";     //10在这边只是一个基准
+    </script>
+</head>
+<body>
+    <div class="box">
+        <h1>新用户注册</h1>
+        <form action="denglu.html" method="get" id="form1" onSubmit="return myCheck()">
+            <div class="use">
+                <p>用&nbsp;&nbsp;户&nbsp;名：</p>
+                <input type="text" name="" id="inuse" onblur="use()">
+                <span id="usesp">*字母、数字或下划线的组合，字母开头（最少4位）</span>
+            </div>
+            <div class="use">
+                <p>手机号码：</p>
+                <input type="text" name="" id="inphone" onblur="phone()">
+                <span id="phonesp">*13、14、15、18开头</span>
+            </div>
+            <div class="use">
+                <p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</p>
+                <input type="password" name="" id="password" onblur="pass()">
+                <span id="pwsp">*以字母开头，字母、数字或下划线的组合，(6-18位)</span>
+            </div>
+            <div class="use">
+                <p>确认密码：</p>
+                <input type="password" name="" id="conpass" onblur="con()">
+                <span id="consp">*两次密码不一致</span>
+            </div>
+            <div class="use">
+                <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</p>
+                <input type="text" name="" id="mail" onblur="mailbox()">
+                <span id="mailsp">*正确的邮箱地址</span>
+            </div>
+            <div class="zhu">
+                <input type="submit" name="" value="注册" id="zc">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    function $(x){
+        return document.getElementById(x)
+    }
+
+    function use(){
+        st= /^[a-zA-Z]{1}[\w\.]{4,19}$/
+        if(st.test($("inuse").value)){
+            $("usesp").style.display='none';
+        }else{
+            $("usesp").style.display='block';
+        }
+    }
+
+    function phone(){
+        st=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/
+        if(st.test($("inphone").value)){
+            $("phonesp").style.display='none';
+        }else{
+            $("phonesp").style.display='block';
+        }
+    }
+
+    function pass(){
+        st=/^[a-zA-Z]\w{5,17}$/
+        if(st.test($("password").value)){
+            $("pwsp").style.display='none';
+        }else{
+            $("pwsp").style.display='block';
+        }
+    }
+
+    function con(){
+        if($("password").value == $("conpass").value){
+            $("consp").style.display='none';
+        }else{
+            $("consp").style.display='block';
+        }
+    }
+
+    function mailbox(){
+        st=/^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/
+        if(st.test($("mail").value)){
+            $("mailsp").style.display='none';
+        }else{
+            $("mailsp").style.display='block';
+        }
+    }
+
+    function myCheck(){
+        for(var i=0;i<$("form1").elements.length-1;i++){
+            if($("form1").elements[i].value == ''){
+                alert('不能有空白项登录')
+                $('form1').elements[i].focus();
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+
